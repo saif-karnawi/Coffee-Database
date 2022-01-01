@@ -7,6 +7,7 @@ import javafx.beans.property.StringProperty;
 
 public class Coffee {
 	
+	
 	private final SimpleStringProperty coffeeName;
 	private final SimpleDoubleProperty coffeePrice;
 	private double price;
