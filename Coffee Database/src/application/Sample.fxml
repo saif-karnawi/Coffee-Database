@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutX="339.0" layoutY="66.0" prefHeight="200.0" prefWidth="204.0">
+              <columns>
+                <TableColumn fx:id="tc1" prefWidth="75.0" text="Coffee" />
+                <TableColumn fx:id="tc2" prefWidth="75.0" text="Price" />
+              </columns>
+            </TableView>
+            <ListView fx:id="listView" layoutX="54.0" layoutY="66.0" prefHeight="200.0" prefWidth="207.0" />
+            <Button fx:id="BtnRemove" layoutX="388.0" layoutY="339.0" mnemonicParsing="false" onAction="#OnRemove" text="Remove" />
+            <Button fx:id="BtnAdd" layoutX="222.0" layoutY="339.0" mnemonicParsing="false" onAction="#OnAdd" prefHeight="26.0" prefWidth="61.0" text="Add" />
+            <Button fx:id="BtnUpdate" layoutX="310.0" layoutY="339.0" mnemonicParsing="false" onAction="#OnUpdate" text="Update" />
+            <Button fx:id="btnRead" layoutX="144.0" layoutY="339.0" mnemonicParsing="false" onAction="#OnRead" text="Read" />
+            <TextField fx:id="textboxCoffee" layoutX="101.0" layoutY="285.0" />
+            <TextField fx:id="textboxPrice" layoutX="388.0" layoutY="285.0" />
+            <Label layoutX="54.0" layoutY="290.0" text="Name:" textFill="WHITE" />
+            <Label layoutX="339.0" layoutY="290.0" text="Price:" textFill="WHITE" />
+            <Label layoutX="190.0" layoutY="14.0" text="Coffee Database" textFill="#00ffb2" underline="true">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label layoutX="478.0" layoutY="365.0" text="Saif Karnawi - 2019" textFill="#00ffb2" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
